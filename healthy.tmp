@@ -1,0 +1,8 @@
+    Name                  Command                   State                   Ports            
+---------------------------------------------------------------------------------------------
+amf            /bin/bash /openair-amf/bin ...   Up (healthy)     38412/sctp, 80/tcp, 9090/tcp
+data_network   /bin/bash -c  apt update;  ...   Up (unhealthy)                               
+mysql          docker-entrypoint.sh mysqld      Up (healthy)     3306/tcp, 33060/tcp         
+nrf            /bin/bash /openair-nrf/bin ...   Up (healthy)     80/tcp, 9090/tcp            
+smf            /bin/bash /openair-smf/bin ...   Up (healthy)     80/tcp, 8805/udp, 9090/tcp  
+upf            /openair-spgwu-tiny/bin/en ...   Up (healthy)     2152/udp, 8805/udp          
